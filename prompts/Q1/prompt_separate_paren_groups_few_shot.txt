@@ -1,0 +1,44 @@
+Generate unit tests for the function separate_paren_groups.
+
+[FUNCTION]
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+    result = []
+    current_string = []
+    current_depth = 0
+
+    for c in paren_string:
+        if c == '(':
+            current_depth += 1
+            current_string.append(c)
+        elif c == ')':
+            current_depth -= 1
+            current_string.append(c)
+
+            if current_depth == 0:
+                result.append(''.join(current_string))
+                current_string.clear()
+
+    return result
+[\FUNCTION]
+
+This is an example of a unit test to follow.
+
+[EXAMPLES]
+def test_separate_simple_groups():
+    self.assertEqual(separate_paren_groups('( ) (( )) (( )( ))'), ['()', '(())', '(()())'], "Should separate three groups correctly ignoring spaces")
+    self.assertEqual(separate_paren_groups('()()()'), ['()', '()', '()'], "Should separate three consecutive simple groups")
+
+def test_separate_nested_groups():
+    self.assertEqual(separate_paren_groups('((()))'), ['((()))'], "A single deeply nested group should be returned as one element")
+    self.assertEqual(separate_paren_groups('(())(())'), ['(())', '(())'], "Should separate two groups each with one level of nesting")
+
+def test_separate_single_group():
+    self.assertEqual(separate_paren_groups('()'), ['()'], "A single simple group should return a list with one element")
+[\EXAMPLES]
