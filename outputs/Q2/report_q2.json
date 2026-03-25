@@ -1,0 +1,322 @@
+{
+  "closest_integer": {
+    "baseline": {
+      "line_pct": 71.42857142857143,
+      "branch_pct": 70.0,
+      "raw": {
+        "covered_lines": 10,
+        "num_statements": 14,
+        "percent_covered": 70.83333333333333,
+        "percent_covered_display": "71",
+        "missing_lines": 4,
+        "excluded_lines": 3,
+        "percent_statements_covered": 71.42857142857143,
+        "percent_statements_covered_display": "71",
+        "num_branches": 10,
+        "num_partial_branches": 3,
+        "covered_branches": 7,
+        "missing_branches": 3,
+        "percent_branches_covered": 70.0,
+        "percent_branches_covered_display": "70"
+      }
+    },
+    "experiments": [
+      {
+        "mode": "zero_shot",
+        "prompt_file": "prompts\\Q2\\prompt_closest_integer_zero_shot.txt",
+        "test_file": "outputs\\Q2\\test_zero_shot_closest_integer.py",
+        "line_pct": 78.57142857142857,
+        "branch_pct": 70.0,
+        "delta_line": 7.142857142857139,
+        "delta_branch": 0.0,
+        "failure": null
+      },
+      {
+        "mode": "few_shot",
+        "prompt_file": "prompts\\Q2\\prompt_closest_integer_few_shot.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_closest_integer.py",
+        "line_pct": 92.85714285714286,
+        "branch_pct": 90.0,
+        "delta_line": 21.42857142857143,
+        "delta_branch": 20.0,
+        "failure": null
+      },
+      {
+        "mode": "few_shot_v2",
+        "prompt_file": "prompts\\Q2\\prompt_closest_integer_few_shot_v2.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v2_closest_integer.py",
+        "line_pct": 85.71428571428571,
+        "branch_pct": 80.0,
+        "delta_line": 14.285714285714278,
+        "delta_branch": 10.0,
+        "failure": "FAILED outputs/Q2/test_few_shot_v2_closest_integer.py::test_llm_closest_integer"
+      },
+      {
+        "mode": "few_shot_v3",
+        "prompt_file": "prompts\\Q2\\prompt_closest_integer_few_shot_v3.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v3_closest_integer.py",
+        "line_pct": 85.71428571428571,
+        "branch_pct": 80.0,
+        "delta_line": 14.285714285714278,
+        "delta_branch": 10.0,
+        "failure": "FAILED outputs/Q2/test_few_shot_v3_closest_integer.py::test_llm_closest_integer"
+      }
+    ]
+  },
+  "file_name_check": {
+    "baseline": {
+      "line_pct": 73.33333333333333,
+      "branch_pct": 70.0,
+      "raw": {
+        "covered_lines": 11,
+        "num_statements": 15,
+        "percent_covered": 72.0,
+        "percent_covered_display": "72",
+        "missing_lines": 4,
+        "excluded_lines": 4,
+        "percent_statements_covered": 73.33333333333333,
+        "percent_statements_covered_display": "73",
+        "num_branches": 10,
+        "num_partial_branches": 3,
+        "covered_branches": 7,
+        "missing_branches": 3,
+        "percent_branches_covered": 70.0,
+        "percent_branches_covered_display": "70"
+      }
+    },
+    "experiments": [
+      {
+        "mode": "zero_shot",
+        "prompt_file": "prompts\\Q2\\prompt_file_name_check_zero_shot.txt",
+        "test_file": "outputs\\Q2\\test_zero_shot_file_name_check.py",
+        "line_pct": 80.0,
+        "branch_pct": 70.0,
+        "delta_line": 6.666666666666671,
+        "delta_branch": 0.0,
+        "failure": "FAILED outputs/Q2/test_zero_shot_file_name_check.py::test_llm_file_name_check"
+      },
+      {
+        "mode": "few_shot",
+        "prompt_file": "prompts\\Q2\\prompt_file_name_check_few_shot.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_file_name_check.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -73.33333333333333,
+        "delta_branch": -70.0,
+        "failure": "coverage json failed: "
+      },
+      {
+        "mode": "few_shot_v2",
+        "prompt_file": "prompts\\Q2\\prompt_file_name_check_few_shot_v2.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v2_file_name_check.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -73.33333333333333,
+        "delta_branch": -70.0,
+        "failure": "coverage json failed: "
+      },
+      {
+        "mode": "few_shot_v3",
+        "prompt_file": "prompts\\Q2\\prompt_file_name_check_few_shot_v3.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v3_file_name_check.py",
+        "line_pct": 80.0,
+        "branch_pct": 70.0,
+        "delta_line": 6.666666666666671,
+        "delta_branch": 0.0,
+        "failure": null
+      }
+    ]
+  },
+  "find_closest_elements": {
+    "baseline": {
+      "line_pct": 86.66666666666667,
+      "branch_pct": 100.0,
+      "raw": {
+        "covered_lines": 13,
+        "num_statements": 15,
+        "percent_covered": 92.0,
+        "percent_covered_display": "92",
+        "missing_lines": 2,
+        "excluded_lines": 3,
+        "percent_statements_covered": 86.66666666666667,
+        "percent_statements_covered_display": "87",
+        "num_branches": 10,
+        "num_partial_branches": 0,
+        "covered_branches": 10,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      }
+    },
+    "experiments": [
+      {
+        "mode": "zero_shot",
+        "prompt_file": "prompts\\Q2\\prompt_find_closest_elements_zero_shot.txt",
+        "test_file": "outputs\\Q2\\test_zero_shot_find_closest_elements.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -86.66666666666667,
+        "delta_branch": -100.0,
+        "failure": "coverage json failed: "
+      },
+      {
+        "mode": "few_shot",
+        "prompt_file": "prompts\\Q2\\prompt_find_closest_elements_few_shot.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_find_closest_elements.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -86.66666666666667,
+        "delta_branch": -100.0,
+        "failure": "coverage json failed: "
+      },
+      {
+        "mode": "few_shot_v2",
+        "prompt_file": "prompts\\Q2\\prompt_find_closest_elements_few_shot_v2.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v2_find_closest_elements.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -86.66666666666667,
+        "delta_branch": -100.0,
+        "failure": "coverage json failed: "
+      },
+      {
+        "mode": "few_shot_v3",
+        "prompt_file": "prompts\\Q2\\prompt_find_closest_elements_few_shot_v3.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v3_find_closest_elements.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -86.66666666666667,
+        "delta_branch": -100.0,
+        "failure": "coverage json failed: "
+      }
+    ]
+  },
+  "numerical_letter_grade": {
+    "baseline": {
+      "line_pct": 65.51724137931035,
+      "branch_pct": 65.38461538461539,
+      "raw": {
+        "covered_lines": 19,
+        "num_statements": 29,
+        "percent_covered": 65.45454545454545,
+        "percent_covered_display": "65",
+        "missing_lines": 10,
+        "excluded_lines": 3,
+        "percent_statements_covered": 65.51724137931035,
+        "percent_statements_covered_display": "66",
+        "num_branches": 26,
+        "num_partial_branches": 5,
+        "covered_branches": 17,
+        "missing_branches": 9,
+        "percent_branches_covered": 65.38461538461539,
+        "percent_branches_covered_display": "65"
+      }
+    },
+    "experiments": [
+      {
+        "mode": "zero_shot",
+        "prompt_file": "prompts\\Q2\\prompt_numerical_letter_grade_zero_shot.txt",
+        "test_file": "outputs\\Q2\\test_zero_shot_numerical_letter_grade.py",
+        "line_pct": 86.20689655172414,
+        "branch_pct": 84.61538461538461,
+        "delta_line": 20.689655172413794,
+        "delta_branch": 19.230769230769226,
+        "failure": "FAILED outputs/Q2/test_zero_shot_numerical_letter_grade.py::test_llm_numerical_letter_grade"
+      },
+      {
+        "mode": "few_shot",
+        "prompt_file": "prompts\\Q2\\prompt_numerical_letter_grade_few_shot.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_numerical_letter_grade.py",
+        "line_pct": 68.96551724137932,
+        "branch_pct": 65.38461538461539,
+        "delta_line": 3.448275862068968,
+        "delta_branch": 0.0,
+        "failure": null
+      },
+      {
+        "mode": "few_shot_v2",
+        "prompt_file": "prompts\\Q2\\prompt_numerical_letter_grade_few_shot_v2.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v2_numerical_letter_grade.py",
+        "line_pct": 68.96551724137932,
+        "branch_pct": 65.38461538461539,
+        "delta_line": 3.448275862068968,
+        "delta_branch": 0.0,
+        "failure": null
+      },
+      {
+        "mode": "few_shot_v3",
+        "prompt_file": "prompts\\Q2\\prompt_numerical_letter_grade_few_shot_v3.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v3_numerical_letter_grade.py",
+        "line_pct": 68.96551724137932,
+        "branch_pct": 65.38461538461539,
+        "delta_line": 3.448275862068968,
+        "delta_branch": 0.0,
+        "failure": null
+      }
+    ]
+  },
+  "separate_paren_groups": {
+    "baseline": {
+      "line_pct": 87.5,
+      "branch_pct": 100.0,
+      "raw": {
+        "covered_lines": 14,
+        "num_statements": 16,
+        "percent_covered": 91.66666666666667,
+        "percent_covered_display": "92",
+        "missing_lines": 2,
+        "excluded_lines": 7,
+        "percent_statements_covered": 87.5,
+        "percent_statements_covered_display": "88",
+        "num_branches": 8,
+        "num_partial_branches": 0,
+        "covered_branches": 8,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      }
+    },
+    "experiments": [
+      {
+        "mode": "zero_shot",
+        "prompt_file": "prompts\\Q2\\prompt_separate_paren_groups_zero_shot.txt",
+        "test_file": "outputs\\Q2\\test_zero_shot_separate_paren_groups.py",
+        "line_pct": 0.0,
+        "branch_pct": 0.0,
+        "delta_line": -87.5,
+        "delta_branch": -100.0,
+        "failure": "coverage json failed: "
+      },
+      {
+        "mode": "few_shot",
+        "prompt_file": "prompts\\Q2\\prompt_separate_paren_groups_few_shot.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_separate_paren_groups.py",
+        "line_pct": 100.0,
+        "branch_pct": 100.0,
+        "delta_line": 12.5,
+        "delta_branch": 0.0,
+        "failure": "FAILED outputs/Q2/test_few_shot_separate_paren_groups.py::test_llm_separate_paren_groups"
+      },
+      {
+        "mode": "few_shot_v2",
+        "prompt_file": "prompts\\Q2\\prompt_separate_paren_groups_few_shot_v2.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v2_separate_paren_groups.py",
+        "line_pct": 100.0,
+        "branch_pct": 100.0,
+        "delta_line": 12.5,
+        "delta_branch": 0.0,
+        "failure": null
+      },
+      {
+        "mode": "few_shot_v3",
+        "prompt_file": "prompts\\Q2\\prompt_separate_paren_groups_few_shot_v3.txt",
+        "test_file": "outputs\\Q2\\test_few_shot_v3_separate_paren_groups.py",
+        "line_pct": 100.0,
+        "branch_pct": 100.0,
+        "delta_line": 12.5,
+        "delta_branch": 0.0,
+        "failure": null
+      }
+    ]
+  }
+}

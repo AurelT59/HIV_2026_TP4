@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Mesure la couverture (lignes + branches) des tests Q1 avec pytest."""
-
 from __future__ import annotations
 
 import json
